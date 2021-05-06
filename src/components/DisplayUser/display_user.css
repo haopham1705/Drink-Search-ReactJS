@@ -1,0 +1,4 @@
+.username-text {
+    color: var(--accent-color);
+    text-transform: uppercase;
+}

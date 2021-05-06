@@ -1,0 +1,8 @@
+.result {
+    font-size: 2rem; 
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.result h5 {
+    background-color: var(--grey-color);
+}

@@ -1,0 +1,19 @@
+.user-welcome h1 {
+    color: var(--primary-color);
+}
+
+.react-search-field {
+    width: 35vw;
+    border: solid 1px var(--primary-color) !important;
+}
+
+.react-search-field-input {
+    height: 15px !important;
+    color: var(--accent-color) !important;
+
+}
+
+.message-input {
+    font-style: italic;
+    color: var(--grey-color);
+}
