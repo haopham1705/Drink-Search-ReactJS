@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import SearchDrinks from "../SearchDrinks";
+// import SearchDrinks from "../SearchDrinks";
 import "./login_style.css";
 
 export default class LoginForm extends Component {
@@ -9,6 +9,7 @@ export default class LoginForm extends Component {
     this.state = {
       userName: "",
       passWord: "",
+      msgLogin: "",
     };
   }
   handleSubmit = (e) => {
@@ -22,11 +23,15 @@ export default class LoginForm extends Component {
         this.props.logInCallback();
       }
     } else {
-      alert("Password or Username incorrect");
+      // alert("Password or Username incorrect");
+      this.setState({
+        msgLogin: "Username or Password incorrect!",
+      });
     }
   };
 
   render() {
+    const { userName, passWord, msgLogin } = this.state;
     return (
       <div>
         <form action="#" className="form-login">
@@ -59,17 +64,8 @@ export default class LoginForm extends Component {
           >
             Log In
           </button>
+          <p className="msg-alert">{msgLogin}</p>
         </form>
-
-        {/* {this.state.checkLogin ? (
-          <div>
-            <SearchDrinks />
-            <DisplayUser infoUser={this.state} />
-            <Calculator />
-          </div>
-        ) : (
-          <div></div>
-        )} */}
       </div>
     );
   }

@@ -20,7 +20,9 @@ export default class ShowTable extends Component {
             {dataDrinks.map((value) => {
               return (
                 <tr key={value.idDrink}>
-                  <td>{value.idDrink}</td>
+                  <td style={{ color: "var(--primary-color)" }}>
+                    {value.idDrink}
+                  </td>
                   <td className="table-content-img">
                     <img src={value.strDrinkThumb} />
                   </td>

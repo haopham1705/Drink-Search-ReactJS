@@ -12,8 +12,3 @@
     color: var(--accent-color) !important;
 
 }
-
-.message-input {
-    font-style: italic;
-    color: var(--grey-color);
-}

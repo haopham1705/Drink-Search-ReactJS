@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { Component } from "react";
 import LoginForm from "./components/LoginForm";
-import SearchDrinks from "./components/SearchDrinks";
+import SearchPage from "./components/SearchPage";
 
 export default class App extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ export default class App extends Component {
       <div>
         <div className="App">
           {isLogIn ? (
-            <SearchDrinks />
+            <SearchPage />
           ) : (
             <LoginForm
               logInCallback={() =>
